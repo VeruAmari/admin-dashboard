@@ -57,6 +57,28 @@ body {
 
 .header {
   background-color: var(--general-color-3);
+  display: grid;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.img-1,
+.img-2 {
+  border-radius: 100%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: var(--highlight-color-1);
+}
+.upper,
+.lower {
+  display: grid;
+  grid: 1fr / 1fr 1fr;
+  align-items: center;
+}
+.action-buttons,
+.profile-1 {
+  justify-self: end;
 }
 
 .main {
