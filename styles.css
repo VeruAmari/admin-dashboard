@@ -84,6 +84,19 @@ body {
 .profile-1 {
   justify-self: end;
 }
+.profile-1,
+.profile-2 {
+  display: grid;
+  align-items: center;
+  gap: 2ex;
+}
+.profile-1 {
+  grid-template: 1fr / auto auto auto;
+}
+.profile-2 {
+  grid-template: 1fr / auto auto auto ;
+  justify-content: start;
+}
 
 ul {
   list-style: none;
