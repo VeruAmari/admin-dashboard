@@ -49,13 +49,10 @@ body {
   padding-right: 1rem;
 }
 
-.header,
-.main {
+.header {
   grid-column-start: 2;
   grid-column-end: 3;
-}
 
-.header {
   background-color: var(--general-color-3);
   display: grid;
   align-items: center;
@@ -81,14 +78,35 @@ body {
   justify-self: end;
 }
 
-.main {
-  background-color: var(--general-color-2);
-}
-
 ul {
   list-style: none;
   text-align: left;
 }
 li {
   padding-bottom: 1.5rem;
+}
+
+.main {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: var(--general-color-2);
+
+  display: grid;
+  grid-template: 2fr 1fr / 2fr 1fr;
+
+  gap: 15px;
+  padding: 15px;
+}
+
+.projects {
+  grid-area: 1 / 1 / 3 / 2;
+  display: grid;
+}
+
+.announcements {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.trending {
+  grid-area: 2 / 2 / 2 / 3;
 }
