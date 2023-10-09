@@ -1,2 +1,2 @@
 # admin-dashboard
-A static admin dashboard layout implemented mostly with grid
+A static admin dashboard layout implemented using only grid
