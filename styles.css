@@ -137,7 +137,22 @@ li {
   border-radius: var(--cards-border-radius);
 
   display: grid;
-  grid-template: 2fr 1fr / 5px 1fr ;
+  grid-template: 1fr 1fr 1fr / 5px 1fr ;
+}
+.card-element {
+  grid-column-start: 2;
+  padding: 1rem;
+}
+.title {
+  align-self: center;
+  grid-column-end: -1;
+}
+.button-container {
+  display: grid;
+  justify-items: end;
+  grid-template: 1fr / 1fr auto auto auto;
+  gap: 2ex;
+  align-self: end;
 }
 
 .announcements {
@@ -159,4 +174,11 @@ li {
 .table {
   border-radius: var(--cards-border-radius);
   background-color: var(--general-color-3);
+}
+
+.title,
+.usrN-1,
+.usrN-2,
+.label {
+  font-weight: bold;
 }
