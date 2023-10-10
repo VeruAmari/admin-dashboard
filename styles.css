@@ -259,6 +259,31 @@ a {
   box-shadow: 2px 2px 1px 0px #ccc;
 }
 
+.announcements-table {
+  display: grid;
+  grid-template: repeat(auto, 5) / auto;
+  gap: 1ex;
+  align-items: center;
+}
+.announcement-container {
+  display: grid;
+  grid-template: auto auto / auto;
+  align-items: center;
+}
+.divider {
+  border-top: solid 1px #ccc;
+  width: 100%;
+  height: 0px;
+}
+.announcement-title {
+  font-weight: bold;
+  font-size: .9rem;
+}
+.announcement-body {
+  font-size: .8rem;
+  color: #555;
+}
+
 .trending-table {
   display: grid;
   grid-template: repeat(4, 1fr) / auto auto;
