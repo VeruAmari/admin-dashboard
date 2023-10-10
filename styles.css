@@ -163,27 +163,29 @@ li {
   background-color: var(--general-color-2);
 
   display: grid;
-  grid-template: 2fr 1fr / 2.7fr 1fr;
+  grid-template: 1fr 1fr / 2.7fr 1fr;
 
   gap: 20px;
   padding: 20px;
+  padding-bottom: 3rem;
 }
 
 .projects {
   grid-area: 1 / 1 / 3 / 2;
   overflow-y: scroll;
-  max-height: 78vh;
+  max-height: 75vh;
 
   display: grid;
   grid-template: 1.5rem auto / repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
+  padding-right: 5px;
 }
 .projects-label {
   grid-area: 1 / 1 / 2 / -1;
 }
 .cards {
   min-width: 250px;
-  min-height: 212px;
+  min-height: 203px;
   background-color: var(--general-color-3);
   border-radius: var(--cards-border-radius);
 
@@ -223,6 +225,7 @@ li {
 }
 
 .table {
+  padding: 1.5rem;
   border-radius: var(--cards-border-radius);
   background-color: var(--general-color-3);
 }
@@ -249,4 +252,27 @@ a {
 .icon:not(.main-logo) {
   max-width: 1.2rem;
   max-height: 1.2rem;
+}
+
+.cards,
+.table {
+  box-shadow: 2px 2px 1px 0px #ccc;
+}
+
+.trending-table {
+  display: grid;
+  grid-template: repeat(4, 1fr) / auto auto;
+  align-items: center;
+}
+.profile-container {
+  padding-left: 1rem;
+  display: grid;
+  grid-template: auto auto / 1fr;
+}
+.profile-handle {
+  font-size: .9rem;
+}
+.profile-description {
+  color: #555;
+  font-size: .8rem;
 }
