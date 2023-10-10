@@ -4,6 +4,7 @@
   --general-color-3: #ffffff;
   --highlight-color-1: #f0b429;
   --cards-border-radius: 15px;
+  --hover-color: #27aee4;
 }
 
 * {
@@ -116,6 +117,12 @@ input {
   color: var(--general-color-3);
   margin-left: 1.5rem;
 }
+button:hover{
+  background-color: var(--hover-color);
+}
+li:hover{
+  background-color: var(--hover-color);
+}
 .profile-1,
 .profile-2 {
   font-weight: bolder;
@@ -136,11 +143,17 @@ input {
 ul {
   list-style: none;
   text-align: left;
+  display: grid;
+  grid-template: auto / 1fr;
 }
 li > a {
-  padding-bottom: 1.5rem;
   display: grid;
-  grid-template: 1fr / 1fr 1fr 99fr;
+  grid-template: auto / 1fr 1fr 99fr;
+  align-items: center;
+  padding-top: .7ex;
+  padding-bottom: .7ex;
+}
+li {
   align-items: center;
 }
 
