@@ -85,8 +85,8 @@ body {
   align-items: center;
 }
 .upper {
-  grid: 1fr / auto 1fr 1fr;
-  gap: 2ex;
+  grid: 1fr / auto 2fr 1fr;
+  gap: 2rem;
 }
 .lower {
   grid: 1fr / 1fr 1fr;
@@ -121,12 +121,13 @@ input {
   font-weight: bolder;
   display: grid;
   align-items: center;
-  gap: 2ex;
 }
 .profile-1 {
   grid-template: 1fr / auto auto auto;
+  gap: 2rem;
 }
 .profile-2 {
+  gap: 2ex;
   grid-template: 1fr / auto auto auto ;
   justify-content: start;
   font-size: 1.5rem;
