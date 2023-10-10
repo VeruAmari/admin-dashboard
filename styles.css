@@ -90,6 +90,7 @@ input {
   border: none;
   border-radius: 15px;
   height: 2rem;
+  padding-left: 1rem;
 }
 
 .action-buttons,
@@ -114,7 +115,7 @@ ul {
   list-style: none;
   text-align: left;
 }
-li {
+li > a {
   padding-bottom: 1.5rem;
   display: grid;
   grid-template: 1fr / 1fr 1fr 99fr;
