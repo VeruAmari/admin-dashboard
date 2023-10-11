@@ -38,12 +38,12 @@ body {
   grid-area: 1 / 1 / 3 / 2;
 
   display: grid;
-  grid-template: 3 / 1;
-  align-content: start;
-  gap: 3rem;
+  grid-template: auto auto auto 1fr / 1fr;
+  align-items: start;
 
   position: relative;
   z-index: 1;
+  gap: 2rem;
 }
 .logo {
   font-size: 1.6rem;
@@ -51,6 +51,10 @@ body {
 .icon{
   padding-left: 1.5rem;
   padding-right: 1rem;
+}
+.spaces,
+.settings {
+  align-self: start;
 }
 
 .header {
@@ -310,4 +314,32 @@ a {
 .profile-description {
   color: #555;
   font-size: .8rem;
+}
+
+.veru-prof {
+  background: url(./static/instag.PNG);
+  background-size: contain;
+}
+.pfp1 {
+  background: url(./static/pfp2.jpg);
+  background-size: contain;
+}
+.pfp2 {
+  background: url(./static/pfp3.jpg);
+  background-size: contain;
+}
+.pfp3 {
+  background: url(./static/pfp1.jpg);
+  background-size: contain;
+}
+
+.due-credit {
+  align-self: end;
+  padding: 1rem;
+  font-size: .8rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+.due-credit > .credit > a {
+  text-decoration:underline;
 }
